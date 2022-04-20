@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@drawable/bg1">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/backarrow"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/leftarrow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@+id/backarrow"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/profile_imageSettings"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"/>
+        
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/plus"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-25dp"
+            app:srcCompat="@drawable/plus"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Kullanıcı Adı:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtUserNameSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kullanıcı Adınızı Girin"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="#DDDBDB"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Hakkında:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hakkında"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="#DDDBDB"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_bg"
+            android:padding="5dp"
+            android:text="Kaydet"
+            android:textColor="#111B21"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/linear_bg"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GizlilikSozlesmesi"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/privacy"
+            android:drawablePadding="21dp"
+            android:padding="10dp"
+            android:text="@string/gizlilik_sözleşmesi"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Hakkimizda"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/information"
+            android:drawablePadding="21dp"
+            android:padding="10dp"
+            android:text="@string/Hakkimizda"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DavetEt"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/invite"
+            android:drawablePadding="21dp"
+            android:padding="10dp"
+            android:text="Arkadaşını Davet Et"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Bildirimler"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/notification"
+            android:drawablePadding="21dp"
+            android:padding="10dp"
+            android:text="Bildirimler"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/YardM"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/help"
+            android:drawablePadding="21dp"
+            android:padding="10dp"
+            android:text="@string/Support"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    
+    
+    
+</RelativeLayout>

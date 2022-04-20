@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+
+    <!-- #CE2196F3 -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageHeader"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-7dp"
+        android:padding="5dp"
+        android:src="@drawable/user"
+        app:civ_border_color="#111B21"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/txtUserNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/profileImageHeader"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:text="Ad Soyad"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtUserNameHeader"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:text="Mail"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

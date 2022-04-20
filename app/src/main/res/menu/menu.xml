@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/settings" android:title="Ayarlar"></item>
+
+    <item android:id="@+id/lokasyon" android:title="Lokasyon"></item>
+
+    <item android:id="@+id/menuDavet" android:title="Arkadaşını Davet Et"></item>
+
+    <item android:id="@+id/logout" android:title="Çıkış"></item>
+</menu>

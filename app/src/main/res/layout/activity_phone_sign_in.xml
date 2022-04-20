@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".PhoneSignInActivity"
+android:orientation="vertical"
+android:background="@drawable/whitebg"
+android:gravity="center">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginEnd="30dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bro App"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28sp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo2" />
+
+<!--
+    <EditText
+        android:id="@+id/txtTelefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="(5**)*** ****"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck"
+        android:textSize="18sp"
+        android:maxLength="10"/>  -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input"
+        android:padding="0dp"
+        app:prefixText="+90"
+        app:prefixTextColor="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTelefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_phone"
+            android:textSize="18sp"
+            android:drawablePadding="8dp"
+            android:textStyle="bold"
+            android:inputType="phone"
+            android:ems="10"
+            android:maxLength="10"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/txtDogrulamaKod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Doğrulama Kodu"
+        android:background="@drawable/custom_input"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/lblHesapOlusturPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:text="Hesap Oluştur"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/lblKodTekrarGonder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:text="Kodu Tekrar Gönder"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnKodGonder"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="11dp"
+        android:text="Kod Gönder"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:textSize="15dp"
+        android:background="@drawable/rounded_corner"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnKodDogrula"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="11dp"
+        android:text="Kodu Doğrula"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:textSize="15dp"
+        android:background="@drawable/rounded_corner"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/MailGirisPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Mail İle Giriş"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="19sp"/>
+</LinearLayout>
+
+</LinearLayout>

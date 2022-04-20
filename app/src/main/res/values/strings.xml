@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BroApp</string>
+    <string name="default_web_client_id2" translatable="false">137541943373-k4nrc3ps13lkb07onu6p0tjqso2aptsa.apps.googleusercontent.com</string>
+
+    <string name="open">Open Navigation </string>
+    <string name="close">Close Navigation </string>
+    <string name="title_activity_location">LocationActivity</string>
+
+    <string name="gizlilik_sözleşmesi"><a href="https://broapp.net/privacy.html#:~:text=We%20do%20not%20currently%20provide,our%20users%20from%20third%20parties.">Gizlilik Sözleşmesi</a></string>
+    <string name="Hakkimizda"><a href="https://broapp.net/aboutus.html">Hakkımızda</a> </string>
+    <string name="Support"><a href=" https://broapp.net/support.html">Yardım</a> </string>
+</resources>
+

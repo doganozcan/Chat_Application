@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_kisiler"
+            android:title="Kişiler"
+            android:icon="@drawable/information" />
+
+        <item
+            android:id="@+id/nav_aramalar"
+            android:title="Aramalar"
+            android:icon="@drawable/invite"/>
+
+        <item
+            android:id="@+id/nav_lokasyon"
+            android:title="Lokasyon"
+            android:icon="@drawable/notification"/>
+
+        <item
+            android:id="@+id/nav_ayarlar"
+            android:title="Ayarlar"
+            android:icon="@drawable/help"/>
+
+        <item
+            android:id="@+id/nav_davet"
+            android:title="Arkadaşlarını Davet Et"
+            android:icon="@drawable/invite"/>
+
+        <item
+            android:id="@+id/nav_yardım"
+            android:title="Yardım"
+            android:icon="@drawable/help"/>
+
+    </group>
+
+</menu>
